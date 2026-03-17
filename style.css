@@ -1,0 +1,152 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.black{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0%;
+    z-index: -1;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1{
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    font-family: "Bitcount Prop Double Ink", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0,
+        "SZP1" 0,
+        "SZP2" 0,
+        "XPN1" 0,
+        "XPN2" 0,
+        "YPN1" 0,
+        "YPN2" 0;
+        z-index: 1;
+        top: 0;
+}
+
+.main img{
+    
+    height: 100%;
+    object-fit: cover;
+}
+
+.main img:hover{
+    cursor: pointer;
+}
+
+.escada{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.escada img{
+    height: 100%;
+    object-fit:cover;
+}
+
+.hitbox_dor_escada{
+    width: 100px;
+    height: 20%;
+    top: 21vh;
+    position: absolute;
+    
+}
+
+.hitbox_dor_escada:hover{
+    cursor: pointer;
+}
+
+.waiting_room{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.waiting_room img{
+    width: 100%;
+    object-fit:cover;
+}
+
+.waiting{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.waiting_img{
+    height: 100%;
+    object-fit:cover;
+}
+
+.box{
+    position: absolute;
+    width: 10%;
+    top: 52vh;
+    
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
+.man{
+    position: absolute;
+    right: 300px;
+    width: 30%;  
+}
+
+.man:hover{
+    cursor: default;
+}

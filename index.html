@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    
+    <title>WAITING ROOM</title>
+</head>
+<body>
+    <div class="black"></div>
+    <audio class="passos" src="audio/passos.mp3"></audio>
+    <audio class="aip" src="audio/aip.mp3"></audio>
+
+    <div class="main">
+        <h1 style="display: none;">WAITING ROOM</h1>
+        <img src="" alt="">
+        <img src="imgs/door2.jpg" alt="" onclick="escada()">
+        <audio src="audio/room_main.mp3" class="audio_main"></audio>
+    </div>
+
+    <div class="escada">
+        <div class="hitbox_dor_escada" onclick="waiting()"></div>
+        <img src="imgs/escada.jpg" alt="">
+    </div>
+
+    <div class="waiting">
+        <img class="man" src="imgs/man.png" alt="">
+        <img class="box" src="imgs/surpresa.png" onclick="box()" alt="">
+        <img class="waiting_img" src="imgs/waiting.jpg" alt="">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
