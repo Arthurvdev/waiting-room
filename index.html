@@ -13,9 +13,15 @@
 </head>
 
 <body>
+    <!--BLACK SCREEN-->
     <div class="black"></div>
+
+    <!--AUDIOS-->
     <audio class="passos" src="audio/passos.mp3"></audio>
     <audio class="aip" src="audio/aip.mp3"></audio>
+    <audio class="man_sound" src="audio/man_sound.mp3"></audio>
+    <audio class="song_photos" src="audio/school_rooftop.mp3"></audio>
+    <audio class="box_sound" src="audio/box_sound.mp3"></audio>
 
     <div class="main">
         <h1>Waiting for Friday</h1>
@@ -30,11 +36,25 @@
     </div>
 
     <div class="waiting">
-        <img class="man" src="imgs/man.png" alt="">
+        <img class="man" onclick="photo1()" src="imgs/man.png" alt="">
         <img class="box" src="imgs/surpresa.png" onclick="box()" alt="">
         <img class="waiting_img" src="imgs/waiting.jpg" alt="">
     </div>
 
+    <!--PHOTOS-->
+
+    <div class="photo_1">
+        
+        <p>Text preserved, translate into your language.</p>
+        <img src="imgs/photo1.jpg" alt="">
+        <p>Esta foto é exatamente como eu me lembrava. Estranho que, todas as vezes que eu ia para parques aquáticos quando era criança, o tempo estava fechado e o céu extremamente nublado; ficava assim por pelo menos duas horas.</p>
+        <p>Existia um tobogã no meio de uma piscina rasa. Lembro-me de como era confortável e, ao mesmo tempo, estranho olhar para o céu e ver tudo cinza — completamente cinza. Às vezes caía uma chuva leve e eu tremia de frio ao sair da água. Algumas vezes, ao sair desse pequeno tobogã, não via ninguém à minha volta. Subia as escadas e, ao descer novamente, todas as pessoas pareciam voltar.</p>
+        <p>Tive um sonho que se repetiu por algumas noites: eu estava sozinho, brincando em uma piscina rasa e infinita. Era de dia e o céu estava completamente cinza. A água estava um pouco gelada; eu sentia um frio na barriga estranho — felicidade, ansiedade e medo, tudo ao mesmo tempo.</p>
+        
+        <button id="close_photo1" onclick="subir_photo1()">Fechar</button>
+</div>
+
+    <p id="para_curiosos" style="display: none;">Por aqui, toda sexta-feira, algo diferente pode acontecer. Seja algo oculto ou não.</p>
     <p id="for_curious" style="display: none;">Something different can happen around here every Friday. Whether it's something hidden or not.</p>
 </body>
 <script src="script.js"></script>
