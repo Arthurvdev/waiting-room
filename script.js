@@ -92,7 +92,6 @@ function box() {
 }
 
 function photo1() {
-    console.log("Clicou na foto 1");
     const div_photo = document.querySelector('.photo_1');
     div_photo.style.marginTop = "0vh";
 
@@ -101,5 +100,4 @@ function photo1() {
 function subir_photo1() {
     const div_photo = document.querySelector('.photo_1');
     div_photo.style.marginTop = "-100vh";
-    // Opcional: adicionar transição suave no CSS para não ser instantâneo
 }
