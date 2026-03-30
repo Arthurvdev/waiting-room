@@ -97,6 +97,7 @@ body {
 .waiting_room img{
     width: 100%;
     object-fit:cover;
+    opacity: 0%;
 }
 
 .waiting{
@@ -117,6 +118,7 @@ body {
 .waiting_img{
     height: 100%;
     object-fit:cover;
+    display: none;
 }
 
 .box{
