@@ -198,3 +198,40 @@ button:hover {
     cursor: pointer;
     transition: 0.3s;
 }
+
+.seta{
+    width: 100px;
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    z-index: 2;
+    filter: invert();
+    cursor: pointer;
+}
+
+.old_room{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: -1;
+    opacity: 0%;
+}
+
+.old_room_img{
+    object-fit: cover;
+    align-items: center;
+}
+
+.man2{
+    position: absolute;
+    left: 0px;
+    width: 30%;
+    bottom: 0px;
+}

@@ -2,6 +2,19 @@ const man = document.querySelector('.man');
 const man_sound = document.querySelector('.man_sound');
 const song_photos = document.querySelector('.song_photos');
 const close_photo1 = document.querySelector('#close_photo1');
+const seta = document.querySelector('.seta');
+const old_room = document.querySelector('.old_room');
+const nostalgic_song = document.querySelector('.nostalgic_song');
+const aip = document.querySelector('.aip');
+
+seta.addEventListener("click", () => {
+    nostalgic_song.loop = true;
+    nostalgic_song.play();
+    old_room.style.zIndex = '5';
+    old_room.style.opacity = '100%';
+    aip.pause();
+});
+
 
 man.addEventListener("mouseover", () => {
     man_sound.loop = true; 
