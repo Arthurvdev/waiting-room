@@ -209,6 +209,14 @@ button:hover {
     cursor: pointer;
 }
 
+.seta2{
+    position: absolute;
+    cursor: pointer;
+    top: 20vh;
+    width: 100px;
+    right: 5vw;
+}
+
 .old_room{
     width: 100vw;
     height: 100vh;

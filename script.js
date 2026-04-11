@@ -3,6 +3,7 @@ const man_sound = document.querySelector('.man_sound');
 const song_photos = document.querySelector('.song_photos');
 const close_photo1 = document.querySelector('#close_photo1');
 const seta = document.querySelector('.seta');
+const seta2 = document.querySelector('.seta2');
 const old_room = document.querySelector('.old_room');
 const nostalgic_song = document.querySelector('.nostalgic_song');
 const aip = document.querySelector('.aip');
@@ -15,6 +16,10 @@ seta.addEventListener("click", () => {
     aip.pause();
 });
 
+seta2.addEventListener("click", () => {
+    alert("“I spent another week trapped in this room. Time goes by so fast…”")
+    alert("“The sunlight coming through the window, even in different places, has a nostalgic effect on so many people.”")
+});
 
 man.addEventListener("mouseover", () => {
     man_sound.loop = true; 
