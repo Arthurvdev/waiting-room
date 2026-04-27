@@ -98,6 +98,7 @@ body {
     width: 100%;
     object-fit:cover;
     opacity: 0%;
+    transition: 0.5s;
 }
 
 .waiting{
@@ -110,22 +111,109 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0%;
+    opacity: 100%;
     transition: 0.5s;
+    z-index: 10;/*-1*/
+}
+
+
+
+.BEGIN{
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+    transition: 1s;
+    z-index: -5;
+}
+
+.box_open{
+    transform: rotate(90deg);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 70vw;
+    transition: 1s;
     z-index: -1;
+
+}
+
+/* Container para posicionar as imagens */
+.container-flutuante {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  transition: 1s;
+  
+}
+
+/* Estilo básico das imagens */
+.flutuar {
+  width: 100px;
+  height: auto;
+  transition: 0.5s;
+  /* Aplica a animação: nome | duração | timing | repetição */
+  animation: flutuando 3s ease-in-out infinite;
+  transition: 1s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flutuar:hover {
+  animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+  cursor: pointer;
+}
+
+/* Criando o movimento */
+@keyframes flutuando {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg); /* Sobe 15 pixels */
+  }
+  70% {
+    transform: translateY(-10px) rotate(-5deg); /* Desce um pouco e gira para o outro lado */
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Diferenciando as animações para não ficarem iguais */
+.flutuar:nth-child(2) {
+  animation-duration: 4s; /* Mais lenta */
+  animation-delay: 0.5s;  /* Começa um pouco depois */
+}
+
+.flutuar:nth-child(3) {
+  animation-duration: 2.5s; /* Mais rápida */
+  animation-delay: 1s;
 }
 
 .waiting_img{
     height: 100%;
     object-fit:cover;
     display: none;
+    transition: 0.5s;
 }
 
 .box{
     position: absolute;
     width: 10%;
     top: 52vh;
-    
+    transition: 0.5s;
 }
 
 .box:hover{
@@ -136,6 +224,7 @@ body {
     position: absolute;
     right: 300px;
     width: 30%;  
+    transition: 0.5s;
 }
 
 .man:hover{
